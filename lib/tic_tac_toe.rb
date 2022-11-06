@@ -5,8 +5,7 @@ class TicTacToe
   
     WIN_COMBINATIONS = [
       [0, 1, 2], [3, 4, 5], [6, 7, 8],
-      [0, 3, 6], [1, 4, 7], [2, 5, 8],
-      [0, 4, 8], [2, 4, 6]
+      [0, 3, 6], [1, 4, 7], [2, 5, 8]
     ]
   
     def display_board
@@ -82,6 +81,6 @@ class TicTacToe
   
     def play
       turn until over?
-      puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
+      puts winner ? "Congratulations #{winner}!" : "BOT Won!"
     end
 end
